@@ -52,4 +52,4 @@ def check_qnap_raid(item, _no_params, info):
 check_info['qnap_raid'] = (check_qnap_raid, "QNAP %s", 0, inventory_qnap_raid)
 snmp_info['qnap_raid'] = ( ".1.3.6.1.4.1.24681.1.2.17.1", [ "2", "6",] )
 snmp_scan_functions['qnap_raid'] = \
-    lambda oid: "QNAP Systems" in oid('.1.3.6.1.2.1.47.1.1.1.1.12.1')
+    lambda oid: "QNAP Systems" in oid('.1.3.6.1.2.1.47.1.1.1.1.12.1', '')
